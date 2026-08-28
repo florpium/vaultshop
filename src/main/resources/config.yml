@@ -1,0 +1,31 @@
+# VaultShop configuration
+# Colors use standard & color codes (e.g. &a = green, &e = yellow, &c = red)
+
+gui:
+  shop-title: "&2&lServer Shop"
+  sell-title: "&a&lSell Items - Close inventory to sell"
+  items-per-page: 45
+
+# How much more expensive buying an item is compared to its sell price.
+# 1.5 means: if something sells for $10, it costs $15 to buy back.
+# This gap is what stops players from buying and instantly re-selling for profit.
+buy-markup-multiplier: 1.5
+
+messages:
+  no-vault: "&c[VaultShop] Vault was not found! Disabling shop."
+  no-economy: "&c[VaultShop] No economy plugin hooked into Vault! Disabling shop."
+  sold-one: "&aSold &e%amount%x %item% &afor &e%price%&a."
+  sold-none: "&cYou don't have any of that to sell."
+  sold-all-summary: "&aSold &e%count% &aitems for a total of &e%total%&a!"
+  sold-all-none: "&cYou didn't sell anything - the menu was empty."
+  bought-one: "&aBought &e%amount%x %item% &afor &e%price%&a."
+  buy-fail-money: "&cYou can't afford that! It costs &e%price%&c."
+  buy-fail-space: "&cYour inventory is full!"
+  no-permission: "&cYou don't have permission to do that."
+  reload-done: "&aVaultShop config and prices reloaded."
+  invalid-material: "&cUnknown item: %input%"
+  invalid-price: "&cPrice must be a positive number."
+  price-set: "&aSet %type% price of %item% to %price%."
+  search-prompt: "&e[VaultShop] Type an item name in chat to search, or type 'cancel'."
+  search-cancelled: "&7Search cancelled."
+  search-none: "&cNo items matched '%term%'."

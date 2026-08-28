@@ -1,0 +1,25 @@
+name: VaultShop
+version: '1.0.0'
+main: com.vaultshop.core.VaultShop
+api-version: '1.21'
+author: Claude
+description: Full item shop (buy + sell) with a searchable GUI, hover-tooltip prices and a drop-in /sell menu, powered by Vault.
+depend: [Vault]
+
+commands:
+  shop:
+    description: Open the item shop to browse, search and buy items.
+    usage: "/shop [search <term>|reload|setprice <material> <buy|sell> <amount>]"
+    permission: vaultshop.use
+  sell:
+    description: Sell items. No args opens a drop-in-to-sell GUI.
+    usage: "/sell [hand]"
+    permission: vaultshop.use
+
+permissions:
+  vaultshop.use:
+    description: Allows use of /shop and /sell
+    default: true
+  vaultshop.admin:
+    description: Allows reloading the shop and setting custom prices
+    default: op
